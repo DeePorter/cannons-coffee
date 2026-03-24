@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --lightblue: #cadbf8;
+  --black: #000000;
+}
+
+/* BASIC FORMATTING */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: normal;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  color: var(--white);
+  justify-content: center;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  color: var(--black);
+  background-color: var(--catalina);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+main {
+  background-color: var(--white);
+  border-bottom: 5px solid var(--sunglow);
+  border-top: 5px solid var(--sunglow);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+.card img {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.button {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--vegan);
+  text-transform: uppercase;
+}
+
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    padding: 2rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .card {
+    padding: 0;
+  }
+}
+
+footer {
+  color: var(--white);
+  text-align: center;
+  padding: 4rem;
+  h2 {
+    margin: 0;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
