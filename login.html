@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="latte.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="https://assets.codepen.io/296057/logo-nav.png"
+                    alt="Cannons Coffee, Beans of Joy! Est. 2014" />
+                <h1>Cannons Coffee</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="latte.html" target="_blank">Coffee</a></li>
+                    <li><a href="https://toastnoircafe.co/" target="_blank">About</a></li>
+                    <li><a href="inquiry.html" target="_blank">Contact</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-container">
+
+                <form id="form">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" required />
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required />
+                    </div>
+                    
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                        </div>
+                        <div id="welcome" style="display: none;">
+                            <h2>Welcome, You are now logged in...!</h2>
+                        </div>
+                </form>
+            </div>
+
+        <p id="output"></p>
+
+
+        </main>
+        <footer>
+            <img src="https://assets.codepen.io/296057/logo-nav.png" alt="Cannons Coffee, Beans of Joy! Est. 2014" />
+            <h2> CANNONS COFFEE </h2>
+            <p>EST. 2014 </p>
+            <p>&copy; 2024 Cannons Coffee. All rights reserved.</p>
+
+        </footer>
+    </div>
+    <script src="js/custom-login.js"></script>
+
+</body>
+
+</html>
